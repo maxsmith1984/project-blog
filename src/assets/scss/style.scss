@@ -17,6 +17,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, Segoe\ UI, Roboto, Helvetica\ Neue, Arial, Noto\ Sans, sans-serif;
 
     font-size: 1.4rem;
+    line-height: 1.5;
     color: $white;
 }
 
@@ -27,3 +28,6 @@ body {
 @import 'blocks/header';
 @import 'blocks/sidebar';
 @import 'blocks/main';
+@import 'blocks/profile';
+@import 'blocks/social';
+@import 'blocks/button';

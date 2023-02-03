@@ -8,13 +8,25 @@
     z-index: $z-index-sidebar;
 
     background-color: $primary;
-    box-shadow: 5px 0 15px rgba(#050505, 0.1);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+    &__content {
+        padding: 0 2rem;
+        margin-top: -5rem;
+    }
+
+    &__footer {
+        padding: 0 2rem;
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .sidebar__header {
     height: 180px;
 
     background-color: $secondary;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 
     &-photo {
         display: block;
