@@ -1,0 +1,56 @@
+.form {
+
+    // .form__group
+
+    &__group {
+        margin-bottom: 1.5rem;
+        position: relative;
+    }
+
+    // .form__control
+
+    &__control {
+        display: block;
+        width: 100%;
+        padding: .5rem 0;
+
+        font-family: inherit;
+        font-size: 1.4rem;
+        color: $white;
+
+
+        background-color: $primary;
+        border: none;
+        border-bottom: 1px solid #3F3F3F;
+        border-radius: 0;
+        box-shadow: none;
+
+        &::placeholder {
+            color: rgba($white, .2);
+        }
+
+        &:focus+.form__line {
+            width: 100%;
+        }
+
+        &--textarea {
+            height: 3rem;
+            resize: none;
+            overflow: hidden;
+        }
+    }
+
+    &__line {
+        width: 0;
+        height: 1px;
+
+        background-color: $blue;
+
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+
+        transition: width .2s linear;
+    }
+}

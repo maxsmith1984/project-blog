@@ -1,0 +1,11 @@
+.comments {
+    margin-top: 3rem;
+
+    &__title {
+        margin-bottom: 2rem;
+
+        font-size: 1.6rem;
+        color: $white;
+        font-weight: 500;
+    }
+}
