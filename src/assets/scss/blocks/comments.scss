@@ -1,11 +1,91 @@
 .comments {
-    margin-top: 3rem;
 
-    &__title {
-        margin-bottom: 2rem;
+    margin-top: 5rem;
 
-        font-size: 1.6rem;
+
+
+    &__item {
+        margin-bottom: 3rem;
+
+        >.comments {
+            padding-left: 3rem;
+            margin-top: 3rem;
+        }
+    }
+
+    // .comments__header
+
+    &__header {
+        display: flex;
+
+        margin-bottom: 1.5rem;
+
+    }
+
+    // .comments__avatar
+
+    &__avatar {
+        width: 3rem;
+        height: 3rem;
+
+        border-radius: 50%;
+    }
+
+    // .comments__author
+
+    &__author {
+        flex-grow: 1;
+        padding-left: 1.5rem;
+
+        font-size: 1.2rem;
+        line-height: 1.4;
+    }
+
+    // .comments__name
+
+    &__name {
+
         color: $white;
         font-weight: 500;
+    }
+
+    // .comments__pubdate
+
+    &__pubdate {
+        color: #757575;
+
+    }
+
+    // .comments__text
+
+    &__text {
+        margin-bottom: 0.5rem;
+
+        font-size: 1.2rem;
+        line-height: 1.3;
+        color: $white;
+    }
+
+    // .comments__reply
+
+    &__reply {
+        padding: 0;
+
+        font-family: inherit;
+        font-size: 1.2rem;
+        line-height: 1.1;
+        color: $blue;
+
+        background: none;
+        border: 0;
+        cursor: pointer;
+
+        &:hover {
+            color: darken($blue, 5%);
+            text-decoration: underline;
+        }
+
+
+
     }
 }
