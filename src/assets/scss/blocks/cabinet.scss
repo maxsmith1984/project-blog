@@ -1,0 +1,33 @@
+.cabinet {
+    display: flex;
+
+    &__form {
+        width: 34rem;
+    }
+
+
+    &__photo {
+        flex-grow: 1;
+        padding-left: 11rem;
+
+        img {
+            display: block;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &__file {
+        font-size: 1.4rem;
+        color: $blue;
+        cursor: pointer;
+
+        input {
+            display: none;
+        }
+
+        &:hover {
+            color: darken($blue, 5%);
+            text-decoration: underline;
+        }
+    }
+}

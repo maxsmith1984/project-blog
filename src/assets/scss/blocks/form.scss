@@ -1,10 +1,20 @@
 .form {
 
     // .form__group
+    &--auth {
+        max-width: 28rem;
+        margin: 0 auto;
+    }
+
+
 
     &__group {
         margin-bottom: 1.5rem;
         position: relative;
+
+        &--md {
+            margin-bottom: 2.5rem;
+        }
     }
 
     // .form__control
@@ -12,7 +22,7 @@
     &__control {
         display: block;
         width: 100%;
-        padding: .5rem 0;
+        padding: .5rem 0 .75rem;
 
         font-family: inherit;
         font-size: 1.4rem;
@@ -52,5 +62,34 @@
         z-index: 1;
 
         transition: width .2s linear;
+    }
+
+    &__footer {
+        &--center {
+            text-align: center;
+        }
+
+
+        &-list {
+            display: flex;
+            justify-content: center;
+
+            font-size: 1.2rem;
+            line-height: 1.2;
+        }
+
+        &-item {
+            margin: 0 .5rem;
+        }
+
+        &-link {
+            font-family: inherit;
+            color: $white;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 }
