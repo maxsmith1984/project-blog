@@ -1,5 +1,5 @@
 .modal {
-    display: flex;
+    display: none;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -15,6 +15,10 @@
     left: 0;
     z-index: $z-index-modal;
 
+    &.show {
+        display: flex;
+    }
+
     &__content {
         width: 100%;
         max-width: 50rem;
@@ -27,6 +31,16 @@
         &--smallpb {
             padding-bottom: 2.5rem;
         }
+
+        &--story {
+            padding: 0;
+            background: none;
+        }
+    }
+
+    &__video {
+        display: block;
+        margin: 0 auto;
     }
 
     &__close {
