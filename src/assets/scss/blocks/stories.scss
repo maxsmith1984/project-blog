@@ -1,9 +1,14 @@
 .stories {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 13px;
-    grid-template-rows: 195px;
+    grid-column-gap: 1.3rem;
+    grid-template-rows: 19.5rem;
     margin-bottom: 3rem;
+
+    @include breakpoint($mobile-bp) {
+        grid-template-columns: 14rem 14rem 14rem 14rem;
+        overflow: auto;
+    }
 
     &__item {
         overflow: hidden;
