@@ -13,13 +13,13 @@
 
     &__form {
         display: flex;
-        align-items: center;
+        align-items: flex-end;
     }
 
     &__textarea {
         display: block;
         flex-grow: 1;
-        height: 25px;
+        height: 34px;
         overflow: hidden;
 
         border: none;

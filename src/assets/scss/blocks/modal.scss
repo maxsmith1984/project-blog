@@ -21,12 +21,19 @@
 
     &__content {
         width: 100%;
-        max-width: 50rem;
-        padding: 8rem;
+        max-width: 40rem;
+        padding: 5rem;
         position: relative;
 
         background-color: $primary;
         border-radius: 5px;
+
+        transform: translateY(-100px);
+        transition: transform 200ms ease-in-out;
+
+        @include breakpoint($tablet-bp) {
+            padding: 5rem 3rem 3rem;
+        }
 
         &--smallpb {
             padding-bottom: 2.5rem;
@@ -39,6 +46,8 @@
     }
 
     &__video {
+        width: 42rem;
+        height: 58rem;
         display: block;
         margin: 0 auto;
     }
@@ -54,8 +63,7 @@
         background: none;
         opacity: .5;
 
-        transition:
-            transform .2s linear,
+        transition: transform .2s linear,
             opacity .2s linear;
 
         &:hover {

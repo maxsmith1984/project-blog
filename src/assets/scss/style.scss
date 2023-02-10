@@ -21,9 +21,14 @@ body {
     line-height: 1.5;
     color: $white;
 
-    &.no-scroll,
-    &.show-sidebar {
+    &.no-scroll {
         overflow: hidden;
+    }
+
+    @include breakpoint($tablet-bp) {
+        &.show-sidebar {
+            overflow: hidden;
+        }
     }
 }
 
